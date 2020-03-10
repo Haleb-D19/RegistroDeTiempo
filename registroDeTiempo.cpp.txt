@@ -1,0 +1,48 @@
+//#include "registroDeTiempo.h"
+// Métodos constructores 
+RegistroDeTiempo::RegistroDeTiempo(int segundos){
+	this->Segundos = segundos;
+}
+RegistroDeTiempo::RegistroDeTiempo(){
+}
+RegistroDeTiempo::RegistroDeTiempo(int minutos){
+	this->Minutos = minutos;
+}
+RegistroDeTiempo::RegistroDeTiempo(){
+}
+
+// Métodos setter
+void Registro::setHoras(int Horas){
+	this->Horas= Horas;
+}
+void Registro::setMinutos(int Minutos){
+	this->Minutos= Minutos;
+}
+void Registro::setSegundos(int Segundos){
+	this->Segundos= Segundos;
+}
+
+// Métodos getter
+int RegistroDeTiempo::getHoras(){
+	return this->Horas;
+}
+int RegistroDeTiempo::getMinutos(){
+	return this->Minutos;
+}
+int RegistroDeTiempo::getSegundos(){
+	return this->Segundos;
+}
+int registroDeTiempo::calcularTiempoAt1(int segundos) {
+    this->Hora= this->Segundos/3600
+    this->Minutos= this->Hora*3600
+    C=(this->Hora-this->Minutos)/60
+    this->Segundos=(this->Segundos % 60)
+
+    return tiempoAt1;
+}
+int registroDeTiempo::calcularTiempoAt2(int minutos) {
+    this->Hora = this->Minutos/60
+    this->Minutos=(this->Minutos MOD 60)
+    this->Segundos=(this->Minutos MOD 60)/60
+    return tiempoAt2;
+}

@@ -1,0 +1,35 @@
+//
+// Created by haleb on 24/02/2020.
+//
+
+#ifndef REGISTRODETIEMPO_REGISTRODETIEMPO_H
+#define REGISTRODETIEMPO_REGISTRODETIEMPO_H
+
+class registroDeTiempo {
+
+	// Métodos constructores
+	RegistroDeTiempo(int segundos);
+	RegistroDeTiempo();
+	RegistroDeTiempo(int minutos);
+	RegistroDeTiempo();
+
+    	// Declarar métodos de tipo público (public)
+public:
+    	// Métodos setter
+	void setHoras(int horas);
+	void setMinutos(int minutos);
+	void setSegundos(int segundos);
+	
+   	 //Métodos getter
+	void getHoras();
+	void getMinutos();
+	void getSegundos();
+	
+	void calcularRegistroDeTiempo
+
+   	 //Declarar atributos de tipo privado (private)
+private:
+   	 int horas;
+  	 int minutos;
+    	 int segundos,
+};
